@@ -5,7 +5,7 @@ const bot = new Discord.Client({disableEveryone: true});
 
 client.on('ready', () => {
     console.log('I am ready!');
-client.user.setActivity("with depression", {
+client.user.setPresence("with depression", {
   type: "STREAMING",
   url: "https://www.twitch.tv/monstercat"
 }); 
