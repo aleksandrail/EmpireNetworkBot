@@ -1,2 +1,2 @@
-# EmpireNetworkBot
-EmpireNetwork Official Bot
+# ReportMeOnBadlion Bot 
+For WorldCracking Discord!
