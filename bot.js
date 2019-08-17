@@ -5,7 +5,6 @@ const bot = new Discord.Client({disableEveryone: true});
 
 client.on('ready', () => {
     console.log('I am ready!');
-  bot.user.setGame("tutorials on TSC";
 });
 
 client.on('message', message => {
