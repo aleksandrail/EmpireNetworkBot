@@ -1,11 +1,16 @@
-const Discord = require("discord.js");
-const bot = new Discord.Client();
+const Discord = require('discord.js');
+const client = new Discord.Client();
 
-bot.on("ready", async () => {
-
-  console.log(`${bot.user.username} is online on ${bot.guilds.size} servers!`);
-  bot.user.setActivity("tutorials on TSC", {type: "WATCHING"});
-  
+client.on('ready', () => {
+    console.log('I am ready!');
+  bot.user.setActivity("tutorials on TSC", {type: "WATCHING"});  
 });
 
+client.on('message', message => {
+    if (message.content === 'ping') {
+    	message.reply('pong');
+  	}
+});
+
+// THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
