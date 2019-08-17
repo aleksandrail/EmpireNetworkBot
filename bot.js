@@ -5,7 +5,6 @@ const bot = new Discord.Client({disableEveryone: true});
 
 client.on('ready', () => {
     console.log('I am ready!');
-client.user.setPresence("empirenetwork.tk | !help);
 }); 
 });
 
